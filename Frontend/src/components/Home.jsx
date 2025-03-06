@@ -21,7 +21,7 @@ function Home() {
 
         try {
             setshow(true);
-            const response = await axios.post("http://localhost:3000/api/generateContent", { text: input, summaryLength: summaryType });
+            const response = await axios.post(`${https://ai-text-summarizer-backend-2il9.onrender.com}/api/generateContent`, { text: input, summaryLength: summaryType });
             if (response.status === 200) {
                 setres(response.data.result);
             }
