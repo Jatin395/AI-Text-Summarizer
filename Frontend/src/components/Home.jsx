@@ -13,7 +13,7 @@ function Home() {
     const [res, setres] = useState('');
     const [show, setshow] = useState(false);
     const [summaryType, setSummaryType] = useState('medium');
-    const URL = "http://localhost:3000";
+    const URL = "https://ai-text-summarizer-wwnt.onrender.com";
 
     const HandleClick = async () => {
         if (!input) {
